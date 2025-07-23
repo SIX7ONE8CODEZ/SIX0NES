@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIX0NES - Premium Event Space</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>SIX0NES</h2>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#spaces" class="nav-link">Spaces</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#membership" class="nav-link">Membership</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <button class="join-btn" onclick="openMembershipModal()">Join Now</button>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Premium Event Spaces for Every Occasion</h1>
+            <p>Transform your events at SIX0NES - where creativity meets sophistication</p>
+            <div class="hero-buttons">
+                <button class="cta-btn primary" onclick="openMembershipModal()">Become a Member</button>
+                <button class="cta-btn secondary" onclick="scrollToSection('spaces')">Explore Spaces</button>
+            </div>
+        </div>
+        <div class="hero-image">
+            <div class="placeholder-image">
+                <i class="fas fa-camera fa-3x"></i>
+                <p>Event Space Image</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About SIX0NES</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>SIX0NES is your premier destination for exceptional event spaces. We provide versatile, professionally designed venues perfect for corporate events, private parties, workshops, and creative gatherings.</p>
+                    <p>Our mission is to create memorable experiences through thoughtfully curated spaces that inspire connection and creativity.</p>
+                    <div class="features">
+                        <div class="feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Professional Grade Equipment</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Flexible Space Configurations</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Full-Service Support</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="placeholder-image">
+                        <i class="fas fa-building fa-3x"></i>
+                        <p>About Us Image</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Spaces Section -->
+    <section id="spaces" class="spaces">
+        <div class="container">
+            <h2>Our Event Spaces</h2>
+            <div class="spaces-grid">
+                <div class="space-card">
+                    <div class="space-image">
+                        <div class="placeholder-image">
+                            <i class="fas fa-users fa-2x"></i>
+                            <p>Meeting Room</p>
+                        </div>
+                    </div>
+                    <div class="space-info">
+                        <h3>Executive Conference Room</h3>
+                        <p>Perfect for corporate meetings and presentations. Seats up to 20 people with state-of-the-art AV equipment.</p>
+                        <ul>
+                            <li>20 person capacity</li>
+                            <li>4K projector & screen</li>
+                            <li>Video conferencing setup</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="space-card">
+                    <div class="space-image">
+                        <div class="placeholder-image">
+                            <i class="fas fa-glass-cheers fa-2x"></i>
+                            <p>Event Hall</p>
+                        </div>
+                    </div>
+                    <div class="space-info">
+                        <h3>Grand Event Hall</h3>
+                        <p>Spacious hall ideal for large gatherings, parties, and celebrations. Can accommodate up to 100 guests.</p>
+                        <ul>
+                            <li>100 person capacity</li>
+                            <li>Professional lighting</li>
+                            <li>Sound system included</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="space-card">
+                    <div class="space-image">
+                        <div class="placeholder-image">
+                            <i class="fas fa-lightbulb fa-2x"></i>
+                            <p>Creative Studio</p>
+                        </div>
+                    </div>
+                    <div class="space-info">
+                        <h3>Creative Workshop Studio</h3>
+                        <p>Flexible space for workshops, training sessions, and creative collaborations. Adaptable layout for any need.</p>
+                        <ul>
+                            <li>50 person capacity</li>
+                            <li>Moveable furniture</li>
+                            <li>Natural lighting</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Membership Section -->
+    <section id="membership" class="membership">
+        <div class="container">
+            <h2>Membership Plans</h2>
+            <p class="membership-intro">Join SIX0NES and enjoy exclusive benefits, priority booking, and special rates on all our event spaces.</p>
+            <div class="plans-grid">
+                <div class="plan-card">
+                    <div class="plan-header">
+                        <h3>Basic</h3>
+                        <div class="price">
+                            <span class="currency">$</span>
+                            <span class="amount">99</span>
+                            <span class="period">/month</span>
+                        </div>
+                    </div>
+                    <ul class="plan-features">
+                        <li><i class="fas fa-check"></i> 4 hours monthly access</li>
+                        <li><i class="fas fa-check"></i> 10% discount on additional hours</li>
+                        <li><i class="fas fa-check"></i> Basic equipment included</li>
+                        <li><i class="fas fa-check"></i> Email support</li>
+                    </ul>
+                    <button class="plan-btn" onclick="selectPlan('basic')">Choose Basic</button>
+                </div>
+                <div class="plan-card featured">
+                    <div class="plan-badge">Most Popular</div>
+                    <div class="plan-header">
+                        <h3>Professional</h3>
+                        <div class="price">
+                            <span class="currency">$</span>
+                            <span class="amount">199</span>
+                            <span class="period">/month</span>
+                        </div>
+                    </div>
+                    <ul class="plan-features">
+                        <li><i class="fas fa-check"></i> 12 hours monthly access</li>
+                        <li><i class="fas fa-check"></i> 20% discount on additional hours</li>
+                        <li><i class="fas fa-check"></i> Premium equipment included</li>
+                        <li><i class="fas fa-check"></i> Priority booking</li>
+                        <li><i class="fas fa-check"></i> Phone & email support</li>
+                    </ul>
+                    <button class="plan-btn" onclick="selectPlan('professional')">Choose Professional</button>
+                </div>
+                <div class="plan-card">
+                    <div class="plan-header">
+                        <h3>Enterprise</h3>
+                        <div class="price">
+                            <span class="currency">$</span>
+                            <span class="amount">399</span>
+                            <span class="period">/month</span>
+                        </div>
+                    </div>
+                    <ul class="plan-features">
+                        <li><i class="fas fa-check"></i> Unlimited monthly access</li>
+                        <li><i class="fas fa-check"></i> 30% discount on additional services</li>
+                        <li><i class="fas fa-check"></i> All equipment included</li>
+                        <li><i class="fas fa-check"></i> Guaranteed availability</li>
+                        <li><i class="fas fa-check"></i> Dedicated account manager</li>
+                        <li><i class="fas fa-check"></i> 24/7 support</li>
+                    </ul>
+                    <button class="plan-btn" onclick="selectPlan('enterprise')">Choose Enterprise</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Get in Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Contact Information</h3>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Address</h4>
+                            <p>123 Business District<br>Your City, State 12345</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Phone</h4>
+                            <p>(555) 123-4567</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>info@six0nes.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h4>Hours</h4>
+                            <p>Mon-Fri: 9AM-8PM<br>Sat-Sun: 10AM-6PM</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <h3>Send us a Message</h3>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>SIX0NES</h3>
+                    <p>Premium event spaces for every occasion. Creating memorable experiences through exceptional venues.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#spaces">Spaces</a></li>
+                        <li><a href="#membership">Membership</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#">Event Planning</a></li>
+                        <li><a href="#">Catering Services</a></li>
+                        <li><a href="#">Equipment Rental</a></li>
+                        <li><a href="#">Technical Support</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <p><i class="fas fa-phone"></i> (555) 123-4567</p>
+                    <p><i class="fas fa-envelope"></i> info@six0nes.com</p>
+                    <p><i class="fas fa-map-marker-alt"></i> 123 Business District</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 SIX0NES. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Membership Modal -->
+    <div id="membershipModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeMembershipModal()">&times;</span>
+            <h2>Join SIX0NES Membership</h2>
+            <form id="membershipForm">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="firstName">First Name</label>
+                        <input type="text" id="firstName" name="firstName" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="lastName">Last Name</label>
+                        <input type="text" id="lastName" name="lastName" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="memberEmail">Email</label>
+                    <input type="email" id="memberEmail" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+                <div class="form-group">
+                    <label for="company">Company (Optional)</label>
+                    <input type="text" id="company" name="company">
+                </div>
+                <div class="form-group">
+                    <label for="planSelect">Select Membership Plan</label>
+                    <select id="planSelect" name="plan" required>
+                        <option value="">Choose a plan</option>
+                        <option value="basic">Basic - $99/month</option>
+                        <option value="professional">Professional - $199/month</option>
+                        <option value="enterprise">Enterprise - $399/month</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="eventTypes">Primary Event Types</label>
+                    <textarea id="eventTypes" name="eventTypes" placeholder="Tell us about the types of events you plan to host..." rows="3"></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Start Membership</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
