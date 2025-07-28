@@ -49,6 +49,22 @@ body {
     align-items: center;
 }
 
+.nav-logo {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.logo-image {
+    height: 40px;
+    width: auto;
+    transition: transform 0.3s ease;
+}
+
+.logo-image:hover {
+    transform: scale(1.05);
+}
+
 .nav-logo h2 {
     color: var(--text-light);
     font-weight: 700;
@@ -139,6 +155,29 @@ body {
     grid-template-columns: 1fr 1fr;
     gap: 4rem;
     align-items: center;
+}
+
+.hero-logo {
+    text-align: center;
+    margin-bottom: 2rem;
+    grid-column: 1 / -1;
+}
+
+.hero-logo-image {
+    height: 80px;
+    width: auto;
+    animation: fadeInUp 1s ease-out;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 .hero-content h1 {
@@ -566,6 +605,24 @@ body {
     padding: 50px 0 20px;
 }
 
+.footer-logo {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.footer-logo-image {
+    height: 35px;
+    width: auto;
+    filter: brightness(0) invert(1);
+    transition: transform 0.3s ease;
+}
+
+.footer-logo-image:hover {
+    transform: scale(1.05);
+}
+
 .footer-content {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -716,6 +773,15 @@ body {
         grid-template-columns: 1fr;
         text-align: center;
         gap: 2rem;
+    }
+
+    .hero-logo {
+        grid-column: 1;
+        margin-bottom: 1rem;
+    }
+
+    .hero-logo-image {
+        height: 60px;
     }
 
     .hero-content h1 {
