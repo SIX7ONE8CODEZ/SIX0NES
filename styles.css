@@ -287,17 +287,30 @@ body {
 
 .features {
     margin-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
 }
 
 .feature {
     display: flex;
     align-items: center;
     margin-bottom: 1rem;
+    padding: 0.5rem;
+    background: rgba(255, 219, 88, 0.1);
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.feature:hover {
+    transform: translateX(5px);
 }
 
 .feature i {
     color: var(--burnt-orange);
-    margin-right: 0.5rem;
+    margin-right: 0.75rem;
+    font-size: 1.2rem;
+    min-width: 20px;
 }
 
 /* Spaces Section */
