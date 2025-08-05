@@ -56,7 +56,7 @@ body {
 }
 
 .logo-image {
-    height: 40px;
+    height: 50px;
     width: auto;
     transition: transform 0.3s ease;
 }
@@ -164,7 +164,7 @@ body {
 }
 
 .hero-logo-image {
-    height: 80px;
+    height: 120px;
     width: auto;
     animation: fadeInUp 1s ease-out;
 }
